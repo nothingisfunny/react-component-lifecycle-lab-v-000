@@ -16,7 +16,7 @@ export default class TweetWall extends React.Component {
   }
 
   shouldComponentUpdate(nextProps){
-    nextProps.newTweets !== 0
+    return nextProps.newTweets > 0
   }
 
   componentWillReceiveProps(nextProps){
